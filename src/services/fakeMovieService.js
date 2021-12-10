@@ -34,7 +34,7 @@ const movies = [
   {
     _id: "3ww3ioyejsi233i2o3jdd33jdlc",
     title: "The Silence",
-    genre: { _id: "dljd2323sdlddd32nldld", name: "Horror" },
+    genre: { _id: "dljd2323sdlddd32nldld", name: "Thriller" },
     numberInStock: 3,
     dailyRentalRate: 4,
   },
