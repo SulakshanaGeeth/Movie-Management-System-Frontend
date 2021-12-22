@@ -15,7 +15,7 @@ class Movies extends React.Component {
     movies: [],
     genres: [],
     currentPage: 1,
-    pageSize: 2,
+    pageSize: 4,
     searchQuery: "",
     selectedGenre: null,
     sortColumn: { path: "title", order: "asc" },
