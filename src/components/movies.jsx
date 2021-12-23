@@ -96,6 +96,7 @@ class Movies extends React.Component {
   render() {
     const { length: count } = this.state.movies;
     const { pageSize, currentPage, sortColumn } = this.state;
+    const { user } = this.props;
 
     if (count === 0) return <p>No movies to display</p>;
 
@@ -112,13 +113,15 @@ class Movies extends React.Component {
         </div>
 
         <div className="col">
-          <Link
-            to="/movies/new"
-            className="btn btn-primary"
-            style={{ marginBottom: 20 }}
-          >
-            New Movie
-          </Link>
+          {user && (
+            <Link
+              to="/movies/new"
+              className="btn btn-primary"
+              style={{ marginBottom: 20 }}
+            >
+              New Movie
+            </Link>
+          )}
 
           <p>Showing {totalCount} movies in database</p>
 
